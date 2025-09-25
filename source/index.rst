@@ -24,6 +24,7 @@ Welcome to the NASA EDGE documentation. This guide will help you navigate and us
 
    pages/guides/set_up
    pages/guides/amp_seq_wf
+   pages/guides/check_run_status
 
 .. toctree::
    :maxdepth: 1
@@ -42,3 +43,4 @@ Welcome to the NASA EDGE documentation. This guide will help you navigate and us
    OSDR Data Repository <https://osdr.nasa.gov/bio/repo/>
    OSDR Tutorials <https://osdr-tutorials.readthedocs.io/en/latest/>
    OSDR Training Resources <https://www.nasa.gov/opportunities-and-training-resources/>
+   EDGE Bioinformatics <https://edgebioinformatics.org/>

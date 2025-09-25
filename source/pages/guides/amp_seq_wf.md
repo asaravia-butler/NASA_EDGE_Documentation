@@ -3,7 +3,7 @@
 ## Login to NASA EDGE
 
 1. Navigate to the NASA EDGE platform by going to [https://nasa-dev.edgebioinformatics.org/](https://nasa-dev.edgebioinformatics.org/)
-2. Follow steps 2 - 5 of the {doc}`set_up#register-for-an-account-using-orcid` instructions to login to the NASA EDGE platform.
+2. Follow steps 2 - 5 of the {doc}`set_up` instructions to login to the NASA EDGE platform.
 3. Once logged into the NASA EDGE platform, click on "AmpIllumina Pipeline" under "WORKFLOWS" in the side bar menu as shown below:
 
 ```{image} ../../_static/images/amp_seq_wf/select_ampIllumina_wf.png
