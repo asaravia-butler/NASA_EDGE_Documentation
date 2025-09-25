@@ -16,8 +16,8 @@
 
 ## Process an OSD dataset
 
-1. To process a dataset hosted on OSDR, navigate to the [OSDR repository](https://osdr.nasa.gov/bio/repo/) and search for the amplicon sequencing dataset you want to process using the free text search bar at the top of the page. Note the OSD number of the dataset you want to process as shown below:
-   *Note: If you are unfamiliar with OSDR, visit the [OSDR Tutorials](https://osdr-tutorials.readthedocs.io/en/latest/) page to learn how to [Access Data in the Open Science Data Repository](https://osdr-tutorials.readthedocs.io/en/latest/pages/guides/access_osdr_data.html) and how to [Navigate an OSDR Study Page](https://osdr-tutorials.readthedocs.io/en/latest/pages/guides/navigate_an_osdr_study_page.html).* 
+1. To process a dataset hosted on OSDR, navigate to the [OSDR repository](https://osdr.nasa.gov/bio/repo/) and search for the amplicon sequencing dataset you want to process using the free text search bar at the top of the page. Note the OSD number of the dataset you want to process as shown below:  
+   > *Note: If you are unfamiliar with OSDR, visit the [OSDR Tutorials](https://osdr-tutorials.readthedocs.io/en/latest/) page to learn how to [Access Data in the Open Science Data Repository](https://osdr-tutorials.readthedocs.io/en/latest/pages/guides/access_osdr_data.html) and how to [Navigate an OSDR Study Page](https://osdr-tutorials.readthedocs.io/en/latest/pages/guides/navigate_an_osdr_study_page.html).* 
 
 ```{image} ../../_static/images/amp_seq_wf/find_OSD_dataset.png
 :alt: Find the OSD dataset you want to process
@@ -31,16 +31,16 @@
 :width: 800px
 ```
 
-3. Under the "Parameters" section, select the amplicon Target Region used for processing, which can be found on the OSD study page under Assay(s) -> Technology for the select dataset as shown below:
-   *Note that some amplicon sequencing datasets on OSDR contain multiple sets of sequencing data, each with a different amplicon target region used, so be sure to select the target region you want to process on the NASA EDGE platform.*    
+3. Under the "Parameters" section, select the amplicon Target Region used for processing, which can be found on the OSD study page under Assay(s) -> Technology for the select dataset as shown below:  
+   > *Note that some amplicon sequencing datasets on OSDR contain multiple sets of sequencing data, each with a different amplicon target region used, so be sure to select the target region you want to process on the NASA EDGE platform.*    
 
 ```{image} ../../_static/images/amp_seq_wf/OSD_amp_target_region.png
 :alt: Select the amplicon Target Region on NASA EDGE to match the one used for the OSD dataset on OSDR
 :width: 800px
 ```
 
-4. All other parameters are set to default values but can be modified. If you are unsure what a specific parameter does, hover over the green "i" icon next to the parameter name for more information, as shown below. If you want to re-process an OSD dataset using the exact parameters that were used to generate the GeneLab processed data on the OSDR repository, the parameter values used can be found in the processing info directory on the OSD study page, which can be downloaded under Files -> GeneLab Processed Diversity Amplicon Files -> Processing Info -> \*processing_info.zip, as shown below.
-   *Note that the parameters values in the example below were set to match what was used to generate the processed data for this dataset in the OSDR repository.*
+4. All other parameters are set to default values but can be modified. If you are unsure what a specific parameter does, hover over the green "i" icon next to the parameter name for more information, as shown below. If you want to re-process an OSD dataset using the exact parameters that were used to generate the GeneLab processed data on the OSDR repository, the parameter values used can be found in the processing info directory on the OSD study page, which can be downloaded under Files -> GeneLab Processed Diversity Amplicon Files -> Processing Info -> \*processing_info.zip, as shown below.  
+   > *Note that the parameters values in the example below were set to match what was used to generate the processed data for this dataset in the OSDR repository.*
 
 ```{image} ../../_static/images/amp_seq_wf/OSD_parameter_selection.png
 :alt: Parameter selection on NASA EDGE and location of processing info on OSDR repository
@@ -64,8 +64,8 @@
 :width: 800px
 ```
 
-3. Open the example runsheet on your local computer and fill in the metadata columns with your sample info. A description of what should be included in each column can be found on GitHub [here](https://github.com/nasa/GeneLab_AmpliconSeq_Workflow/tree/main/examples/runsheet#required-columns). An example of a completed runsheet csv file for a paired-end dataset is shown below:
-   *Note: The "forward" and "reverse" (PE data only) columns should only include the forward and reverse fastq file names, respectively, for each respective sample. Make sure the sample, file, and group names do not contain any spaces or weird characters.*
+3. Open the example runsheet on your local computer and fill in the metadata columns with your sample info. A description of what should be included in each column can be found on GitHub [here](https://github.com/nasa/GeneLab_AmpliconSeq_Workflow/tree/main/examples/runsheet#required-columns). An example of a completed runsheet csv file for a paired-end dataset is shown below:  
+   > *Note: The "forward" and "reverse" (PE data only) columns should only include the forward and reverse fastq file names, respectively, for each respective sample. Make sure the sample, file, and group names do not contain any spaces or weird characters.*
 
 ```{image} ../../_static/images/amp_seq_wf/example_runsheeet.png
 :alt: Completed example runsheet csv file for a paired-end dataset
@@ -76,26 +76,33 @@
 
 5. Upload your runsheet csv file and your forward and reverse (for PE datasets only) fastq files to the [NASA EDGE platform](https://nasa-dev.edgebioinformatics.org/) by following the "Upload data" instructions in the {doc}`set_up` guide.
 
-6. Once your runsheet and fastq files are successfully uploaded, navigate to the [AmpIllumina workflow](https://nasa-dev.edgebioinformatics.org/workflow/nasa) on the NASA EDGE platform and type in a Project/Run Name for your project (required) and an optional Description, then under the "Parameters" section, select "Start with a runsheet csv file as input", and for the "Runsheet CSV" parameter, select the runsheet csv file you uploaded in step 5 from the drop-down menu. Next, input the forward and reverse primer sequences used to amplify the amplicon that was sequenced in your dataset, as shown in the example below.
-   *Note that the "Group Column" and "Sample Column" parameters will only need to be modified if you did not use the example runsheet csv file specified in steps 1 - 3 above.*
+6. Once your runsheet and fastq files are successfully uploaded, navigate to the [AmpIllumina workflow](https://nasa-dev.edgebioinformatics.org/workflow/nasa) on the NASA EDGE platform and type in a Project/Run Name for your project (required) and an optional Description, then under the "Parameters" section, select "Start with a runsheet csv file as input", and for the "Runsheet CSV" parameter, click on the drop-down icon to open the "Select a file" window as shown below. In the "Select a file" pop-up windown, you can select the "publicdata" folder to access publicly available datasets or you can navigate to your uploaded files by selecting the "uploads" folder -> your orcid folder -> then the "main" folder. Once in the main folder you will see all CSV files that you have uploaded to the platform. Select the runsheet csv file you uploaded in step 5. You will then see the selected runsheet populate the "Runsheet CSV" parameter of the workflow as shown below.
 
-```{image} ../../_static/images/amp_seq_wf/input_runsheet_info.png
-:alt: Input the non-OSD dataset information into the NASA EDGE platform
+```{image} ../../_static/images/amp_seq_wf/select_runsheet.png
+:alt: Input the Project/Run name and select the runsheet csv file from the drop-down menu on the NASA EDGE platform
+:width: 800px
+```
+   
+7. Next, input the forward and reverse primer sequences used to amplify the amplicon that was sequenced in your dataset, as shown in the example below.  
+   > *Note that the "Group Column" and "Sample Column" parameters will only need to be modified if you did not use the example runsheet csv file specified in steps 1 - 3 above.*
+
+```{image} ../../_static/images/amp_seq_wf/input_primers.png
+:alt: Input the forward and reverse primer sequences used to amplify the amplicon into the NASA EDGE platform
 :width: 800px
 ```
 
-7. Under the "Parameters" section, select the amplicon Target Region that was amplified and sequenced in the dataset you're processing. All other parameters are set to default values but can be modified. If you are unsure what a specific parameter does, hover over the green "i" icon next to the parameter name for more information, as shown below.
+8. Under the "Parameters" section, select the amplicon Target Region that was amplified and sequenced in the dataset you're processing. All other parameters are set to default values but can be modified. If you are unsure what a specific parameter does, hover over the green "i" icon next to the parameter name for more information, as shown below.
 
 ```{image} ../../_static/images/amp_seq_wf/runsheet_parameter_selection.png
 :alt: Amplicon target region and parameter selection on NASA EDGE
 :width: 800px
 ```
    
-8. When you are satisfied with your parameter selection, click the "Submit" button at the bottom to submit your job to the processing queue.
+9. When you are satisfied with your parameter selection, click the "Submit" button at the bottom to submit your job to the processing queue.
 
-9. To check the status of your submitted job, following the instructions in the {doc}`check_run_status` tutorial.
+10. To check the status of your submitted job, following the instructions in the {doc}`check_run_status` tutorial.
 
-10. Once your job is complete, you can view and download all output files and visualizations by following the instructions in the [View and download output files](#view-and-download-output-files) section below. 
+11. Once your job is complete, you can view and download all output files and visualizations by following the instructions in the [View and download output files](#view-and-download-output-files) section below. 
 
 ## View and download output files
 
