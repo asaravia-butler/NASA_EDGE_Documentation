@@ -12,7 +12,7 @@ Welcome to the NASA EDGE documentation. This guide will help you navigate and us
 
 .. toctree::
    :maxdepth: 1
-   :caption: Tutorials
+   :caption: Tutorials (Coming Soon...)
 
    Setup a NASA EDGE Account <https://www.youtube.com/@nasagenelab3052>   
    Run the Amplicon Seq WF on OSDR Data <https://www.youtube.com/@nasagenelab3052>
