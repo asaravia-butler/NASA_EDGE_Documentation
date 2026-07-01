@@ -2,7 +2,7 @@
 
 ## Register for an account using [ORCiD](https://orcid.org/)
 
-1. Navigate to the NASA EDGE platform by going to [https://nasa-dev.edgebioinformatics.org/](https://nasa-dev.edgebioinformatics.org/)
+1. Navigate to the NASA EDGE platform by going to [https://nasa.edgebioinformatics.org/](https://nasa.edgebioinformatics.org/)
 
 2. Click on "ORCID LOGIN" in the top right corner:
 
