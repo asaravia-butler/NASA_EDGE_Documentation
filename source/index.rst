@@ -8,15 +8,16 @@ Welcome to the NASA EDGE documentation. This guide will help you navigate and us
    :maxdepth: 1
    :caption: Portals
    
-   NASA EDGE Platform <https://nasa-dev.edgebioinformatics.org/>
+   NASA EDGE Platform <https://nasa.edgebioinformatics.org/>
 
 .. toctree::
    :maxdepth: 1
-   :caption: Tutorials (Coming Soon...)
+   :caption: Tutorials
 
-   Setup a NASA EDGE Account <https://www.youtube.com/@nasagenelab3052>   
-   Run the Amplicon Seq WF on OSDR Data <https://www.youtube.com/@nasagenelab3052>
-   Run the Amplicon Seq WF on non-OSDR Data <https://www.youtube.com/@nasagenelab3052>
+   Setup a NASA EDGE Account <https://youtu.be/a9NBh8mxbiY>
+   Run the Amplicon Sequencing Workflow on OSDR Data <https://youtu.be/cF1XhMMZizc>
+   Run the Amplicon Sequencing Workflow on non-OSDR Data <https://youtu.be/2_UOo_sjmw8>
+   Modify, Share, and Delete Projects on NASA EDGE <https://youtu.be/uYhj8VN0h1w>
 
 .. toctree::
    :maxdepth: 1
